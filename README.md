@@ -16,3 +16,7 @@ Code for:
 
 Slides from [DJ4E](https://www.dj4e.com/):  
 ***[Learn django by Dr. Chuck](https://github.com/theanxiuser/DJ4E/slides)***
+
+#### You can submit assignment in DJ4E using NGrok from localhost
+
+For more: [follow this](https://ngrok.com/download)
