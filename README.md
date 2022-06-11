@@ -1,4 +1,4 @@
-# DJ4E
+# DJ4E : Django For Everybody
 Happily Learning Django, Python web framework
 
 
