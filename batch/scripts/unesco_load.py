@@ -33,6 +33,11 @@ def run():
         except:
             y = None
 
-        site = Site(name=row[0], description=row[1], justification=row[2], year=y, longitude=row[4], latitude=row[5], area_hectares=row[6], category=c, state=s, region=r, iso=i)
+        try:
+            h = float(row[6])
+        except:
+            h = None
+
+        site = Site(name=row[0], description=row[1], justification=row[2], year=y, longitude=row[4], latitude=row[5], area_hectares=h, category=c, state=s, region=r, iso=i)
 
         site.save()
