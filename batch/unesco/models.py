@@ -30,9 +30,9 @@ class ISO(models.Model):
 class Site(models.Model):
     name = models.CharField(max_length=300)
     year = models.IntegerField(null=True)
-    lattitude = models.FloatField(null=True)
+    latitude = models.FloatField(null=True)
     longitude = models.FloatField(null=True)
-    descreption = models.TextField(null=True)
+    description = models.TextField(null=True)
     justification = models.TextField(null=True)
     area_hectares = models.FloatField(null=True)
     category = models.ForeignKey("Category", on_delete=models.CASCADE, null=True)
