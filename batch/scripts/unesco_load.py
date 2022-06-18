@@ -1,14 +1,12 @@
-import csv  # https://docs.python.org/3/library/csv.html
-
-# https://django-extensions.readthedocs.io/en/latest/runscript.html
+import csv
 
 # python3 manage.py runscript many_load
 
-from many.models import Person, Course, Membership
+from batch.unesco.models import Category, State, Region, ISO, Site
 
 
 def run():
-    fhand = open('many/load.csv')
+    fhand = open("unesco/whc-sites-2018-clean.csv")
     reader = csv.reader(fhand)
     next(reader)  # Advance past the header
 
