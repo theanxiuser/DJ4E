@@ -2,7 +2,7 @@ import csv
 
 # python3 manage.py runscript many_load
 
-from batch.unesco.models import Category, State, Region, ISO, Site
+from unesco.models import Category, State, Region, ISO, Site
 
 
 def run():
