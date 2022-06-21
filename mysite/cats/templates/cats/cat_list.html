@@ -22,11 +22,11 @@
 {% endif %}
 
 {% if breed_count > 0 %}
-    <p><a href="{% url 'cats:create_cats' %}">Create a cat</a></p>
+    <p><a href="{% url 'cats:create_cats' %}">Add a cat</a></p>
 {% else %}
     <p>First create new breed!</p>
 {% endif %}
 
-<a href="{% url 'cats:breed_list' %}">View Breed</a> |
-<a href="{% url 'cats:create_breed' %}">Create new breed</a>
+<a href="{% url 'cats:breed_list' %}">View breeds</a> |
+<a href="{% url 'cats:create_breed' %}">Add a breed</a>
 {% endblock %}
