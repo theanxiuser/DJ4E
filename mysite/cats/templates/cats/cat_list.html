@@ -27,6 +27,6 @@
     <p>First create new breed!</p>
 {% endif %}
 
-<a >View Breed</a> |
-<a>Create new breed</a>
+<a href="{% url 'cats:breed_list' %}">View Breed</a> |
+<a href="{% url 'cats:create_breed' %}">Create new breed</a>
 {% endblock %}
