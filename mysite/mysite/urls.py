@@ -25,6 +25,7 @@ SITE_ROOT = os.path.join(BASE_DIR, 'site')
 
 # add path to all webapp in main path of project
 urlpatterns = [
+    path("cats/", include("cats.urls")),
     path("autos/", include("autos.urls")),
     path("accounts/", include("django.contrib.auth.urls")),
     path("hello/", include("hello.urls")),
