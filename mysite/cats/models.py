@@ -6,8 +6,14 @@ from django.db import models
 class Breed(models.Model):
     name = models.CharField(max_length=200)
 
+    def __str__(self):
+        return self.name
+
 # cat class
 class Cat(models.Model):
     nickname = models.CharField(max_length=200)
     weight = models.FloatField()
     breed = models.ForeignKey("Breed", on_delete=models.CASCADE, null=False)
+
+    def __str__(self):
+        return self.nickname
