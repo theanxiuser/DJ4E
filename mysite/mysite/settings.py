@@ -42,7 +42,8 @@ INSTALLED_APPS = [
     "home.apps.HomeConfig",
     "hello.apps.HelloConfig",
     "autos.apps.AutosConfig",
-    "cats.apps.CatsConfig"
+    "cats.apps.CatsConfig",
+    "django_extensions",    # for runscript
 ]
 
 MIDDLEWARE = [
