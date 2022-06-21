@@ -6,6 +6,28 @@ from django.urls import reverse_lazy
 from .models import Cat, Breed
 
 # Create your views here.
+class ShowBreed(LoginRequiredMixin, View):
+    def get(self, request):
+        brd = Breed.objects.all()
+
+        ctx = {"breed_list": brd}
+        return render(request, "cats/breed_list.html", ctx)
+
+class CreateBreed(LoginRequiredMixin, CreateView):
+    model = Breed
+    fields = "__all__"
+    success_url = reverse_lazy("cats:breed_list")
+
+class UpdateBreed(LoginRequiredMixin, UpdateView):
+    model = Breed
+    fields = "__all__"
+    success_url = reverse_lazy("cats:breed_list")
+
+class DeleteBreed(LoginRequiredMixin, DeleteView):
+    model = Breed
+    fields = "__all__"
+    success_url = reverse_lazy("cats:breed_list")
+
 class MainView(LoginRequiredMixin, View):
     def get(self, request):
         cat_all = Cat.objects.all()
