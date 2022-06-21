@@ -14,6 +14,7 @@ class Cat(models.Model):
     nickname = models.CharField(max_length=200)
     weight = models.FloatField()
     breed = models.ForeignKey("Breed", on_delete=models.CASCADE, null=False)
+    foods = models.CharField(max_length=200, null=True)
 
     def __str__(self):
         return self.nickname
