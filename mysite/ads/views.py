@@ -11,11 +11,11 @@ class AdDetailView(OwnerDetailView):
 
 class AdCreateView(OwnerCreateView):
     model = Ad
-    fields = ["title", "text"]
+    fields = ["title", "price", "text"]
 
 class AdUpdateView(OwnerUpdateView):
     model = Ad
-    fields = ["title", "text"]
+    fields = ["title", "price", "text"]
 
 class AdDeleteView(OwnerDeleteView):
     model = Ad
