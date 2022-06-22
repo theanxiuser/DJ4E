@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'django.contrib.humanize',
 
     # Extensions - installed with pip3 / requirements.txt
     'django_extensions',
@@ -53,6 +54,7 @@ INSTALLED_APPS = [
     "hello.apps.HelloConfig",
     "autos.apps.AutosConfig",
     "cats.apps.CatsConfig",
+    "ads.apps.AdsConfig",
 ]
 
 # When we get to crispy forms :)
