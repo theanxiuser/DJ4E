@@ -24,18 +24,6 @@
 </div>
 {% endif %}
 
-
-<h1>{{ pic.title }}</h1>
-
-<p>
-{{ pic.text }}
-</p>
-<p>
-</p>
-<p>
-<a href="{% url 'ads:all' %}">All pics</a>
-</p>
-
 <span style="float: right;">
     ({{ ad.updated_at|naturaltime }})
     {% if ad.owner == user %}
