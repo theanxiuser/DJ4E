@@ -5,6 +5,12 @@ from ads.humanize import naturalsize
 
 
 # Create the form class.
+
+# strip means to remove whitespace from the beginning and the end before storing the column
+class CommentForm(forms.Form):
+    comment = forms.CharField(required=True, max_length=500, min_length=3, strip=True)
+
+
 class CreateForm(forms.ModelForm):
     max_upload_limit = 2 * 1024 * 1024
     max_upload_limit_text = naturalsize(max_upload_limit)
